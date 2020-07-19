@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Ludowa Szafa</title>
+	<meta name="description" content=""/>
+	<meta name="keywords" content="szafa,"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="shortcut icon" href="../icon.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Atma:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css" tyle="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/fontello.css" tyle="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+			<div class="logo">
+
+				<span style="color:#4fc22d">LUDOWA</span> SZAFA
+
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		
+		<div class="nav">
+		
+			<ol>
+				<li><a href="../index.html">STRONA GŁÓWNA</a></li>
+				<li><a href="#">O NAS</a></li>
+				<li><a href="#">ORAWSKIE</a>
+					<ul>
+						<li><a href="../orawskie/koszule.html">KOSZULE</a></li>
+						<li><a href="../orawskie/bluzki.html">BLUZKI</a></li>
+						<li><a href="../orawskie/spodnice.html">SPÓDNICE</a></li>
+						<li><a href="../orawskie/gorsety.html">GPRÓCNIKI</a></li>
+						<li><a href="../orawskie/wiganki.html">WIGANKI</a></li>
+						<li><a href="../orawskie/dzieciece.html">DZIECIĘCE</a></li>
+						<li><a href="../orawskie/inne.html">INNE</a></li>
+					</ul>
+				</li>
+				<li><a href="#">GORALSKIE</a>
+					<ul>
+						<li><a href="koszule.html">KOSZULE</a></li>
+						<li><a href="bluzki.html">BLUZKI</a></li>
+						<li><a href="spodnice.html">SPÓDNICE</a></li>
+						<li><a href="gorsety.html">GORSETY</a></li>
+						<li><a href="dzieciece.html">DZIECIĘCE</a></li>
+						<li><a href="inne.html">INNE</a></li>
+					</ul>
+				</li>	
+				<li><a href="../kontakt.html">KONTAKT</a></li>
+
+			</ol>
+		
+		</div>
+		
+		<div class="content">
+			<img src="../goralska.png" class="img">
+			<div id="bluzki-goralskie">
+				<div class="bluzki">
+					<img src="bluzki/1.jpg" width="200" height="200">
+				</div>
+				<div class="cena-opis">
+					<p class="cena">100 zł</p>
+					<p class="opis"> Opis tego produktu</p>
+				</div>	
+				</div>
+			<img src="../orawa.png" class="img">
+		</div>
+		
+		<div style="clear:both"></div>
+		
+		<div class="socials">
+			<div class="socialdivs">
+				<div class="fb"><i class="icon-facebook-rect-2"></i></div>
+				<div class="mess"><i class="icon-comment-4"></i></div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			Ludowa Szafa &copy; 2020
+		</div>
+		
+		<div class="ad">
+			
+		</div>
+		
+	</div>
+	
+	<script src="jquery-3.5.1.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+	</script>
+	
+</body>
+
+</html>
